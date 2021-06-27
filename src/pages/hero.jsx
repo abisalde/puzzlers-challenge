@@ -10,16 +10,20 @@ const Hero = () => {
     return (
         <>
             <section className='wiket-hero'>
-                <HeroTextDesc />
-                <figure className='wiket-hero-image'>
-                    <HeroImageOverlay />
-                    <LocationRoute />
-                    <WiketServices />
-                    <figcaption>
-                        <p>Hanging Garden</p>
-                        <small>Florist in Bangkok</small>
-                    </figcaption>
-                </figure>
+                <div className='wrapper'>
+                    <div className='wiket-hero-content'>
+                        <HeroTextDesc />
+                        <figure className='wiket-hero-image'>
+                            <HeroImageOverlay />
+                            <LocationRoute />
+                            <WiketServices />
+                            <figcaption>
+                                <p>Hanging Garden</p>
+                                <small>Florist in Bangkok</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
             </section>
         </>
     );

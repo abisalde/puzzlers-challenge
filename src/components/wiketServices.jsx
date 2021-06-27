@@ -10,12 +10,12 @@ import '../assets/css/wiket-services.css';
 
 const WiketServices = () => {
     const data = [
+        { image: PotJect, desc: 'Potject', descSmall: 'Pottery in Bangkok' },
         {
             image: GreenThumb,
             desc: 'GreenThumb',
             descSmall: 'Garderner in CheChe',
         },
-        { image: PotJect, desc: 'Potject', descSmall: 'Pottery in Bangkok' },
         { image: GreenCafe, desc: 'Green Cafe', descSmall: 'Cafe in Bangkok' },
     ];
     return (
@@ -23,13 +23,13 @@ const WiketServices = () => {
             <div className='wiket-loc-city'>
                 {data.map((card, i) => {
                     return (
-                        <div className='wiket-city-card' key={i}>
+                        <div className='wiket-card' key={i}>
                             <img
                                 className='wiket-card-img'
                                 src={card.image}
                                 alt='project-location'
                             />
-                            <div className='loc-city-text'>
+                            <div className='loc-card-text'>
                                 <p>{card.desc}</p>
                                 <small>{card.descSmall}</small>
                             </div>

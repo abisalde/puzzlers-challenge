@@ -7,7 +7,8 @@ header.wiket-main-header {
     z-index: 999;
     background-color: transparent;
     transition: all 0.3s ease 0s;
-    height: 4.0625rem;
+    min-height: 3.0625rem;
+    background: var(--bg-color);
 }
 
 nav {
@@ -50,6 +51,7 @@ nav {
     transition: all 0.3s ease-in-out;
     background-color: var(--hamburger-menu-color);
     outline: none;
+    border-radius: 0.31rem;
 }
 
 .bar:nth-of-type(3) {

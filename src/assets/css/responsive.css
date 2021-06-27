@@ -26,11 +26,115 @@
     header.wiket-main-header {
         height: auto;
     }
+
+    .wiket-hero-content {
+        position: absolute;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        padding-left: 3.625rem;
+        padding-right: 2rem;
+    }
+
+    .wiket-hero-image {
+        position: relative;
+        flex: 0 1 40.11%;
+        margin-right: 7.625rem;
+    }
+
+    .wiket-hero-desc {
+        position: relative;
+        flex: 0 1 56.9%;
+    }
+
+    .wiket-hero-desc {
+        margin-left: 1.725rem;
+    }
+
+    .pin-1 > img,
+    .pin-2 > img {
+        height: 2.325rem;
+    }
+
+    .pin-1 {
+        top: 15.525%;
+        left: -15%;
+    }
+
+    .pin-2 {
+        top: 48%;
+        right: -19.8%;
+    }
+
+    .wiket-hero-desc p.sub-desc {
+        font-size: 1.875rem;
+    }
+
+    .wiket-hero-desc h1.desc {
+        font-size: 4.325rem;
+        line-height: 1;
+        padding-top: 1rem;
+    }
+
+    .wiket-card:nth-of-type(1) {
+        top: 4%;
+        right: -22%;
+        width: 7.525rem;
+        height: 9.525rem;
+    }
+
+    .wiket-card:nth-of-type(2) {
+        width: 8.725rem;
+        height: 12.625rem;
+        left: -14.12%;
+        top: 25.3%;
+    }
+
+    .wiket-card:nth-of-type(3) {
+        top: 57.333%;
+        right: -22%;
+        width: 7.525rem;
+        height: 9.525rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .wrapper {
         max-width: 1120px;
+    }
+
+    .wiket-hero-content {
+        padding-left: 6.521rem;
+        padding-right: 3.625rem;
+    }
+
+    .wiket-hero-image {
+        flex: 0 1 37.1%;
+    }
+
+    .wiket-hero-desc {
+        position: relative;
+        flex: 0 1 60.9%;
+    }
+
+    .pin-1 {
+        top: 19.31%;
+        left: -13%;
+        z-index: 99;
+    }
+
+    .pin-2 {
+        right: -17%;
+        top: 48.2%;
+        z-index: 99;
+    }
+
+    .wiket-hero-desc h1.desc {
+        font-size: 5.425rem;
+        line-height: 1;
+    }
+
+    .wiket-hero-desc p.sub-desc {
+        font-size: 2rem;
     }
 }
 
@@ -42,6 +146,25 @@
     .wiket-main-nav {
         margin-left: 20.542rem;
         flex: 0 1 44%;
+    }
+
+    .wiket-card:nth-of-type(1) {
+        width: 9.625rem;
+        height: 11.25rem;
+        right: -16%;
+    }
+
+    .wiket-card:nth-of-type(2) {
+        width: 9.625rem;
+        height: 13.625rem;
+        left: -11.1%;
+        top: 27%;
+    }
+
+    .wiket-card:nth-of-type(3) {
+        width: 9.625rem;
+        height: 11.25rem;
+        right: -26.811%;
     }
 }
 
@@ -95,11 +218,37 @@
     nav {
         justify-content: space-between;
         flex-flow: row nowrap;
-        padding: 2.0625rem 0rem;
+        padding: 1.625rem 0rem;
     }
 
     .btn.get-started {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .pin-1,
+    .pin-2 {
+        display: none;
+    }
+
+    .wiket-hero-desc p.sub-desc {
+        font-size: 1.341rem;
+    }
+
+    .wiket-hero-desc h1.desc {
+        font-size: 3.625rem;
+        line-height: 1.1;
+        padding-top: 0.325rem;
+    }
+
+    p.wiket-text-desc {
+        padding-top: 1.625rem;
+        margin-right: 1.725rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .wiket-hero-desc h1.desc {
+        font-size: 3rem;
     }
 }
