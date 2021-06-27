@@ -1,0 +1,107 @@
+header.wiket-main-header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+    height: 4.0625rem;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 2.025rem 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: space-between;
+}
+
+.wiket-main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 51%;
+    margin-left: 8.0625rem;
+}
+
+.nav-menu-links {
+    font-family: 'Cera Pro';
+    font-size: 1.0625rem;
+    color: var(--hamburger-menu-color);
+}
+
+.hamburger {
+    display: none;
+    justify-content: flex-end;
+    cursor: pointer;
+    outline: none;
+}
+
+.bar {
+    display: block;
+    width: 2.0625rem;
+    height: 0.175rem;
+    margin: 0.3325rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--hamburger-menu-color);
+    outline: none;
+}
+
+.bar:nth-of-type(3) {
+    width: 1.285rem;
+    margin-left: 0.851rem;
+}
+
+.bar:nth-of-type(2) {
+    margin-left: 0.15rem;
+}
+
+.bar:nth-of-type(1) {
+    width: 1.6875rem;
+    margin-left: 0.5rem;
+}
+
+.active > .bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.active > .bar:nth-of-type(1) {
+    transform: translateY(0.425rem) rotate(45deg);
+    width: 2.0625rem;
+}
+
+.active > .bar:nth-of-type(3) {
+    transform: translateY(-0.855rem) rotate(-45deg);
+    width: 1.0625rem;
+}
+
+.btn.get-started {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background: var(--btn-color);
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff8ef;
+    transition: 0.3s ease 0s;
+    outline: none;
+    font-family: 'Cera Pro';
+    font-size: 1rem;
+    font-weight: 600;
+    width: 9rem;
+    height: 3rem;
+}
+
+.btn.get-started.mobile {
+    margin-right: 1.425rem;
+    width: 6rem;
+    height: 5rem;
+}
+
+.mobile-nav {
+    display: none;
+}

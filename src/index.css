@@ -1,5 +1,53 @@
+@import url('./assets/css/responsive.css');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --btn-color: #faa834;
+    --hamburger-menu-color: #004e4c;
+    --theme-color: #fffcec;
+}
+
+@font-face {
+    font-family: 'Faible';
+    font-weight: normal;
+    src: local('Faible'),
+        url('./assets/fonts/Faible/Faible-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpoofTrial';
+    font-weight: normal;
+    src: local('SpoofTrial'),
+        url('./assets/fonts/SpoofTrial/SpoofTrial-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SpoofTrial';
+    font-weight: bold;
+    src: local('SpoofTrial'),
+        url('./assets/fonts/SpoofTrial/SpoofTrial-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro'),
+        url('./assets/fonts/cera pro/Cera Pro Medium.otf') format('opentype');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
 }

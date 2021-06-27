@@ -1,14 +1,41 @@
 import React from 'react';
 
+//Import All Images needed
+import GreenThumb from '../assets/jpg/header-img-gardener.jpg';
+import PotJect from '../assets/jpg/header-img-pottery.jpg';
+import GreenCafe from '../assets/jpg/header-img-barista.jpg';
+
+//Import CSS from Wiket
+import '../assets/css/wiket-services.css';
+
 const WiketServices = () => {
+    const data = [
+        {
+            image: GreenThumb,
+            desc: 'GreenThumb',
+            descSmall: 'Garderner in CheChe',
+        },
+        { image: PotJect, desc: 'Potject', descSmall: 'Pottery in Bangkok' },
+        { image: GreenCafe, desc: 'Green Cafe', descSmall: 'Cafe in Bangkok' },
+    ];
     return (
         <>
             <div className='wiket-loc-city'>
-                <img src='' alt='' />
-                <div className='loc-city-text'>
-                    <p></p>
-                    <small></small>
-                </div>
+                {data.map((card, i) => {
+                    return (
+                        <div className='wiket-city-card' key={i}>
+                            <img
+                                className='wiket-card-img'
+                                src={card.image}
+                                alt='project-location'
+                            />
+                            <div className='loc-city-text'>
+                                <p>{card.desc}</p>
+                                <small>{card.descSmall}</small>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </>
     );

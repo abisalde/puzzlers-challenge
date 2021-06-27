@@ -4,6 +4,7 @@ import React from 'react';
 import HeroTextDesc from '../components/heroTextDesc';
 import HeroImageOverlay from '../components/heroImageOverlay';
 import LocationRoute from '../components/locationRoute';
+import WiketServices from '../components/wiketServices';
 
 const Hero = () => {
     return (
@@ -13,7 +14,7 @@ const Hero = () => {
                 <figure className='wiket-hero-image'>
                     <HeroImageOverlay />
                     <LocationRoute />
-
+                    <WiketServices />
                     <figcaption>
                         <p>Hanging Garden</p>
                         <small>Florist in Bangkok</small>

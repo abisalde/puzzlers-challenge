@@ -1,0 +1,105 @@
+.wrapper {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+
+    header.wiket-main-header {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .wrapper {
+        max-width: 1320px;
+    }
+
+    .wiket-main-nav {
+        margin-left: 20.542rem;
+        flex: 0 1 44%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 990px) {
+    .wiket-main-nav {
+        background: var(--theme-color);
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 0.625rem 1.6875rem rgba(0, 0, 0, 0.05);
+        flex-direction: column;
+        right: 160%;
+        top: 10%;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .wiket-main-nav.active {
+        left: 0;
+        margin: 0 auto;
+        width: 100vw;
+        min-height: 450px;
+    }
+
+    .btn.get-started.desktop {
+        display: none;
+    }
+
+    .wiket-logo-home > img,
+    .btn.get-started.mobile,
+    .hamburger {
+        max-height: 2.5rem;
+        max-width: 6rem;
+    }
+
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn.get-started.mobile {
+        font-size: 0.555rem;
+        font-weight: 600;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        padding: 2.0625rem 0rem;
+    }
+
+    .btn.get-started {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
