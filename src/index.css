@@ -75,7 +75,7 @@ li {
 section.wiket-hero {
     position: relative;
     background: var(--bg-color);
-    height: 960px;
+    height: 1050px;
     padding-top: 6.652rem;
     display: grid;
 }

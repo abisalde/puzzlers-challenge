@@ -70,7 +70,7 @@
     .wiket-hero-desc h1.desc {
         font-size: 4.325rem;
         line-height: 1;
-        padding-top: 1rem;
+        padding-top: 1.325rem;
     }
 
     .wiket-card:nth-of-type(1) {
@@ -169,7 +169,7 @@
     p.wiket-text-desc {
         margin-right: 1.725rem;
         position: relative;
-        top: 31.222%;
+        top: 29.522%;
         right: -33%;
         width: 53.33%;
         padding-left: 1rem;
