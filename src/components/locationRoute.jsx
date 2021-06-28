@@ -6,8 +6,8 @@ const LocationRoute = () => {
     return (
         <>
             <picture className='loc-route'>
-                <source media='(min-width: 700px )' srcset={LocRouteMobile} />
-                <img src={LocRoute} alt='wiket-hero-location' />
+                <source media='(min-width: 990px )' srcset={LocRoute} />
+                <img src={LocRouteMobile} alt='wiket-hero-location' />
             </picture>
         </>
     );

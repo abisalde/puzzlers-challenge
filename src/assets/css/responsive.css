@@ -44,10 +44,8 @@
     .wiket-hero-desc {
         position: relative;
         flex: 0 1 56.9%;
-    }
-
-    .wiket-hero-desc {
         margin-left: 1.725rem;
+        padding-top: 4.7251rem;
     }
 
     .pin-1 > img,
@@ -76,24 +74,37 @@
     }
 
     .wiket-card:nth-of-type(1) {
-        top: 4%;
+        top: 8.311%;
+        width: 7.871rem;
         right: -22%;
-        width: 7.525rem;
-        height: 9.525rem;
+        height: 10.125rem;
     }
 
     .wiket-card:nth-of-type(2) {
-        width: 8.725rem;
-        height: 12.625rem;
-        left: -14.12%;
+        width: 8.5rem;
+        height: 11.825rem;
+        left: -16.12%;
         top: 25.3%;
     }
 
     .wiket-card:nth-of-type(3) {
         top: 57.333%;
-        right: -22%;
-        width: 7.525rem;
-        height: 9.525rem;
+        right: -29%;
+        height: 8.525rem;
+        width: 6.871rem;
+    }
+
+    picture.loc-route {
+        bottom: -54.4%;
+        right: 29.725%;
+    }
+
+    p.wiket-text-desc {
+        position: relative;
+        top: 32.452%;
+        right: -33%;
+        width: 60.33%;
+        padding-left: 2.825rem;
     }
 }
 
@@ -124,7 +135,7 @@
 
     .pin-2 {
         right: -17%;
-        top: 48.2%;
+        top: 46.2%;
         z-index: 99;
     }
 
@@ -135,6 +146,33 @@
 
     .wiket-hero-desc p.sub-desc {
         font-size: 2rem;
+    }
+
+    .wiket-card:nth-of-type(1) {
+        right: -14.342%;
+    }
+
+    .wiket-card:nth-of-type(2) {
+        right: -15%;
+        top: 28.3%;
+    }
+
+    .wiket-card:nth-of-type(3) {
+        right: -27%;
+    }
+
+    picture.loc-route {
+        bottom: -50.4%;
+        right: 35.725%;
+    }
+
+    p.wiket-text-desc {
+        margin-right: 1.725rem;
+        position: relative;
+        top: 31.222%;
+        right: -33%;
+        width: 53.33%;
+        padding-left: 1rem;
     }
 }
 
@@ -149,22 +187,27 @@
     }
 
     .wiket-card:nth-of-type(1) {
-        width: 9.625rem;
-        height: 11.25rem;
+        height: 10.5rem;
         right: -16%;
+        width: 9.125rem;
     }
 
     .wiket-card:nth-of-type(2) {
-        width: 9.625rem;
-        height: 13.625rem;
+        height: 12.3875rem;
         left: -11.1%;
-        top: 27%;
+        top: 32.412%;
+        width: 9.125rem;
     }
 
     .wiket-card:nth-of-type(3) {
-        width: 9.625rem;
-        height: 11.25rem;
+        height: 10.3125rem;
         right: -26.811%;
+        width: 9.125rem;
+    }
+
+    picture.loc-route {
+        bottom: -33.4%;
+        right: 37.5%;
     }
 }
 
@@ -244,6 +287,21 @@
     p.wiket-text-desc {
         padding-top: 1.625rem;
         margin-right: 1.725rem;
+    }
+
+    figure.wiket-hero-image {
+        padding-top: 4.625rem;
+        display: flex;
+        flex-flow: column;
+    }
+
+    figcaption {
+        order: -1;
+        padding-bottom: 1rem;
+    }
+
+    section.wiket-hero {
+        height: 100vh;
     }
 }
 

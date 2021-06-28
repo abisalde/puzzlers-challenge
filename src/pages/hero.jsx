@@ -15,13 +15,13 @@ const Hero = () => {
                         <HeroTextDesc />
                         <figure className='wiket-hero-image'>
                             <HeroImageOverlay />
-                            <LocationRoute />
                             <WiketServices />
                             <figcaption>
                                 <p>Hanging Garden</p>
                                 <small>Florist in Bangkok</small>
                             </figcaption>
                         </figure>
+                        <LocationRoute />
                     </div>
                 </div>
             </section>
