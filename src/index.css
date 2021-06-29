@@ -76,8 +76,9 @@ section.wiket-hero {
     position: relative;
     background: var(--bg-color);
     height: 1050px;
-    padding-top: 6.652rem;
+    padding-top: 3.652rem;
     display: grid;
+    overflow-y: auto;
 }
 
 .wiket-hero-image {
@@ -126,7 +127,6 @@ section.wiket-hero {
 
 picture.loc-route {
     position: absolute;
-    z-index: 1;
 }
 
 p.wiket-text-desc {
@@ -152,7 +152,6 @@ p.wiket-text-desc span {
     border-radius: 0.75rem;
     display: flex;
     flex-flow: column;
-    position: absolute;
     z-index: 1;
     width: 9.125rem;
 }
@@ -163,13 +162,12 @@ p.wiket-text-desc span {
 }
 
 .loc-card-text {
-    padding-top: 0.625rem;
+    padding-top: 0.452rem;
     font-family: 'Faible';
-    color: rgba(0, 78, 76, 0.8);
     font-size: 0.9525rem;
 }
 
-.loc-card-text > p {
+.loc-card-text > h3 {
     font-weight: 700;
 }
 

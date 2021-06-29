@@ -73,6 +73,10 @@
         padding-top: 1.325rem;
     }
 
+    .wiket-card {
+        position: absolute;
+    }
+
     .wiket-card:nth-of-type(1) {
         top: 8.311%;
         width: 7.871rem;
@@ -105,6 +109,16 @@
         right: -33%;
         width: 60.33%;
         padding-left: 2.825rem;
+    }
+
+    .loc-card-text > h3,
+    .loc-card-text > small {
+        color: rgba(0, 78, 76, 0.8);
+    }
+
+    .loc-card-text > small {
+        font-size: 0.852rem;
+        padding-bottom: 0.525rem;
     }
 }
 
@@ -169,7 +183,7 @@
     p.wiket-text-desc {
         margin-right: 1.725rem;
         position: relative;
-        top: 29.522%;
+        top: 32.522%;
         right: -33%;
         width: 53.33%;
         padding-left: 1rem;
@@ -205,8 +219,12 @@
         width: 9.125rem;
     }
 
+    p.wiket-text-desc {
+        top: 36.625%;
+    }
+
     picture.loc-route {
-        bottom: -33.4%;
+        bottom: -39.51%;
         right: 37.5%;
     }
 }
@@ -303,10 +321,39 @@
     section.wiket-hero {
         height: 100vh;
     }
+
+    .hero-img-overlay > {
+        min-height: 422px;
+    }
+
+    .cards-content {
+        margin-top: -3rem;
+        margin-left: 1.5241rem;
+    }
+
+    .loc-card-text p {
+        color: #333333;
+        font-weight: 700;
+        font-size: 0.9525rem;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 396px) {
     .wiket-hero-desc h1.desc {
         font-size: 3rem;
+    }
+
+    picture.loc-route {
+        bottom: -29%;
+        right: 18.726%;
+        display: grid;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 626px) {
+    picture.loc-route {
+        bottom: -36%;
+        right: 15.6531%;
     }
 }

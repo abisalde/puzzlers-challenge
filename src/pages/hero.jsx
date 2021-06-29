@@ -15,9 +15,11 @@ const Hero = () => {
                         <HeroTextDesc />
                         <figure className='wiket-hero-image'>
                             <HeroImageOverlay />
-                            <WiketServices />
+                            <div className='cards-content'>
+                                <WiketServices />
+                            </div>
                             <figcaption>
-                                <p>Hanging Garden</p>
+                                <h3>Hanging Garden</h3>
                                 <small>Florist in Bangkok</small>
                             </figcaption>
                         </figure>

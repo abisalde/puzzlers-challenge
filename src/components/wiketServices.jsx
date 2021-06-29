@@ -30,7 +30,7 @@ const WiketServices = () => {
                                 alt='project-location'
                             />
                             <div className='loc-card-text'>
-                                <p>{card.desc}</p>
+                                <h3>{card.desc}</h3>
                                 <small>{card.descSmall}</small>
                             </div>
                         </div>
