@@ -21,9 +21,9 @@ const Hero = ({ tref, motion, animation }) => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                     >
-                        <div className='wiket-hero-content'>
+                        <motion.div className='wiket-hero-content' tref={tref}>
                             <HeroTextDesc motion={motion} />
-                            <figure className='wiket-hero-image' tref={tref}>
+                            <figure className='wiket-hero-image'>
                                 <HeroImageOverlay
                                     motion={motion}
                                     animation={animation}
@@ -41,7 +41,7 @@ const Hero = ({ tref, motion, animation }) => {
                                 </figcaption>
                             </figure>
                             <LocationRoute />
-                        </div>
+                        </motion.div>
                     </motion.div>
                 </section>
             </motion.div>

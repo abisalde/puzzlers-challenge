@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --btn-color: #faa834;
     --hamburger-menu-color: #004e4c;
