@@ -2,6 +2,8 @@
 
 -   This is Front-end Challenge
 
+![Wiket Home](./src/wiket-home.png);
+
 ### Dev Dependecies
 
 -   React Library
