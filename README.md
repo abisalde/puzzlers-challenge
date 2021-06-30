@@ -2,7 +2,7 @@
 
 -   This is Front-end Challenge
 
- ![Wiket Home](./public/wiket-home.png);
+ ![Wiket Home](./public/wiket-home.png)
 
 ### Dev Dependecies
 
