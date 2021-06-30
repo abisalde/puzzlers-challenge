@@ -111,14 +111,19 @@
         padding-left: 2.825rem;
     }
 
-    .loc-card-text > h3,
     .loc-card-text > small {
+        font-size: 0.752rem;
+        padding-bottom: 0.525rem;
         color: rgba(0, 78, 76, 0.8);
+        font-weight: 600;
     }
 
-    .loc-card-text > small {
-        font-size: 0.852rem;
-        padding-bottom: 0.525rem;
+    figcaption h3 {
+        color: #333333;
+    }
+
+    .wiket-loc-city {
+        flex-flow: column;
     }
 }
 
@@ -318,6 +323,16 @@
         padding-bottom: 1rem;
     }
 
+    figcaption h3 {
+        font-weight: 800;
+    }
+
+    figcaption small {
+        color: #333333;
+        font-weight: 600;
+        font-size: 0.753rem;
+    }
+
     section.wiket-hero {
         height: 100vh;
     }
@@ -327,14 +342,21 @@
     }
 
     .cards-content {
-        margin-top: -3rem;
+        margin-top: -4.7231rem;
         margin-left: 1.5241rem;
     }
 
-    .loc-card-text p {
-        color: #333333;
+    .loc-card-text small {
+        color: rgba(0, 78, 76, 0.8);
         font-weight: 700;
-        font-size: 0.9525rem;
+        font-size: 0.725rem;
+    }
+
+    .wiket-loc-city {
+        flex-flow: row wrap;
+        position: relative;
+        justify-content: space-between;
+        flex: 1;
     }
 }
 
@@ -351,9 +373,41 @@
     }
 }
 
-@media (min-width: 414px) and (max-width: 626px) {
+@media (min-width: 400px) and (max-width: 626px) {
     picture.loc-route {
         bottom: -36%;
         right: 15.6531%;
+    }
+
+    .wiket-card:nth-of-type(2) {
+        position: absolute;
+        right: 0%;
+        bottom: -82%;
+    }
+
+    .wiket-card:nth-of-type(3) {
+        position: absolute;
+        left: -7%;
+        bottom: -144%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 399px) {
+    picture.loc-route {
+        bottom: -28.562%;
+        right: 6.6531%;
+        height: 38%;
+    }
+
+    .wiket-card:nth-of-type(2) {
+        position: absolute;
+        right: 0%;
+        bottom: -99.111%;
+    }
+
+    .wiket-card:nth-of-type(3) {
+        position: absolute;
+        left: -7%;
+        bottom: -144%;
     }
 }

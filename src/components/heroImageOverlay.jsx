@@ -5,18 +5,20 @@ import Florist from '../assets/jpg/header-img-florist.jpg';
 import Pin1 from '../assets/svg/pin-01.svg';
 import Pin2 from '../assets/svg/pin-02.svg';
 
-const HeroImageOverlay = () => {
+const HeroImageOverlay = ({ motion, animation }) => {
     return (
         <>
-            <div className='hero-img-overlay'>
-                <img src={Florist} alt='wiket-hero-florist' />
-            </div>
-            <div className='pin-1'>
-                <img src={Pin2} alt='wiket-location-pin' />
-            </div>
-            <div className='pin-2'>
-                <img src={Pin1} alt='wiket-location-pin' />
-            </div>
+            <motion.div animate={animation}>
+                <div className='hero-img-overlay'>
+                    <img src={Florist} alt='wiket-hero-florist' />
+                </div>
+                <div className='pin-1'>
+                    <img src={Pin2} alt='wiket-location-pin' />
+                </div>
+                <div className='pin-2'>
+                    <img src={Pin1} alt='wiket-location-pin' />
+                </div>
+            </motion.div>
         </>
     );
 };

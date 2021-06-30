@@ -142,11 +142,10 @@ p.wiket-text-desc span {
 
 .wiket-loc-city {
     display: flex;
-    flex-flow: column;
 }
 
 .wiket-card {
-    padding: 0.45rem 0.45rem 0.725rem 0.45rem;
+    padding: 0.35rem 0.35rem 0.725rem 0.35rem;
     background: var(--card-color);
     box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 8%);
     border-radius: 0.75rem;

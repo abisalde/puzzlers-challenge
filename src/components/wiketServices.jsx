@@ -8,7 +8,7 @@ import GreenCafe from '../assets/jpg/header-img-barista.jpg';
 //Import CSS from Wiket
 import '../assets/css/wiket-services.css';
 
-const WiketServices = () => {
+const WiketServices = ({ motion, animation }) => {
     const data = [
         { image: PotJect, desc: 'Potject', descSmall: 'Pottery in Bangkok' },
         {
@@ -20,10 +20,19 @@ const WiketServices = () => {
     ];
     return (
         <>
-            <div className='wiket-loc-city'>
+            <motion.div
+                className='wiket-loc-city'
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+            >
                 {data.map((card, i) => {
                     return (
-                        <div className='wiket-card' key={i}>
+                        <motion.div
+                            className='wiket-card'
+                            key={i}
+                            animate={animation}
+                        >
                             <img
                                 className='wiket-card-img'
                                 src={card.image}
@@ -33,10 +42,10 @@ const WiketServices = () => {
                                 <h3>{card.desc}</h3>
                                 <small>{card.descSmall}</small>
                             </div>
-                        </div>
+                        </motion.div>
                     );
                 })}
-            </div>
+            </motion.div>
         </>
     );
 };
